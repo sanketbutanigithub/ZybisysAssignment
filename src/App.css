@@ -1,0 +1,86 @@
+.image img{
+  width: 150px;
+  height: 150px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.card img{
+  width: 100%;
+}
+
+/* .card {
+  box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
+  margin: 30px;
+  padding: 10px;
+} */
+
+.card {
+  box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #ffffff;
+  margin: 10px;
+}
+
+.row {
+  margin: 0 -5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+p.price {
+  text-align: right;
+  color: red;
+  font-weight: 500;
+}
+
+.column {
+  /* float: left; */
+  width: 25%;
+  padding: 0 10px;
+}
+
+button {
+  height: 50px;
+  margin: 12px 20px;
+  width: 100px;
+}
+
+@media screen and (max-width: 500px) {
+  .col .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .card img{
+    width: 100%;
+
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .row {
+    margin: 0 -5px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .column {
+    /* float: left; */
+    width: 50%;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .col .column {
+    flex-direction: column;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+}
